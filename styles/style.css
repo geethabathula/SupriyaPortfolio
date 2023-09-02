@@ -1,0 +1,278 @@
+/* Application Font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+/* Special Font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+/* Navbar Font */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  /* background: #faf4ee; */
+}
+body {
+  background-color: #faf4ee;
+  color: #2a1a54;
+}
+
+/* Navbar */
+#navbar {
+  height: 5rem;
+  width: 100vw;
+  background-color: #ffd54f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  /* position: fixed; */
+}
+
+.nav-heading {
+  font-family: "Merriweather", serif;
+  /* font-family: "Cinzel Decorative", cursive; */
+  font-size: 2rem;
+}
+
+.nav-heading::first-letter {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.nav-sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: inherit;
+  width: 50vw;
+}
+
+nav a {
+  color: #25164b;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #25164b;
+}
+
+nav a :visited {
+  text-decoration: none;
+  color: #25164b;
+}
+
+/* Section-Home */
+
+#home {
+  display: flex;
+  height: 100vh;
+  padding: 3rem;
+  padding-right: 0.2rem;
+  background-image: url("../images/geethasupriya500.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right 1px;
+}
+
+.home-content {
+  display: flex;
+  width: 70vw;
+  flex-flow: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.home-content-special-text-1 {
+  font-size: 3.5rem;
+  font-family: "Merriweather", serif;
+}
+
+.home-content-special-text-js {
+  font-family: "Merriweather", serif;
+  font-weight: 90px;
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #ffd54f;
+  text-decoration-thickness: 0.5rem;
+}
+
+.home-button {
+  padding-left: 3rem;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  padding-left: 3rem;
+  cursor: thumb;
+}
+
+.home-connect-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  height: 3rem;
+  width: 10rem;
+  padding: 5px;
+  background-color: #6c63ff;
+  color: #faf4ee;
+  border: none;
+  border-radius: 2px;
+}
+
+/* Section-About */
+#about {
+  display: flex;
+  height: 100vh;
+  padding: 3rem;
+  padding-right: 0.2rem;
+  background-image: url("../images/about-banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right 0px;
+}
+
+.about-content-special-text-1 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+.about-content-special-text-developer {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.about-content-main {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.about-content-main-item1 {
+  width: 25rem;
+  padding: 1rem;
+}
+
+.about-content-main-item2 {
+  width: 25rem;
+  padding: 1rem;
+}
+
+.about-content-main-item-header {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.about-content-main-item-para {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+/* Section-Contactme */
+#contactme {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 80vh;
+}
+
+.contact-card {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.13);
+  width: 600px;
+  height: 15rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 15px solid #ffd54f;
+}
+
+.contact-image-box {
+  width: 150px;
+  height: 10rem;
+  border-radius: 50%;
+}
+.contact-card-image {
+  width: 100%;
+}
+
+.contact-card-content {
+  display: flex;
+  flex-flow: column;
+  margin: 2px;
+  padding: 25px;
+  align-items: center;
+}
+
+.contact-card-content-header {
+  margin-bottom: 5px;
+}
+
+.contact-card-content-title {
+  margin-bottom: 5px;
+}
+
+.contact-card-content-email {
+  margin-bottom: 5px;
+  display: inline-flex;
+}
+
+.contact-card-content-email-text {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.contact-card-content-email-text:hover {
+  text-decoration: underline;
+  text-decoration-color: #25164b;
+}
+
+.contact-card-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  align-items: center;
+}
+
+.contact-card-links a {
+  margin: 5px;
+}
+
+.contact-card-links a:hover {
+  background-color: #25164b32;
+  border-radius: 2px;
+}
+
+.contact-card-links a :visited {
+  text-decoration: none;
+  color: #25164b;
+}
+
+/* Location */
+#location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+#location h2 {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
